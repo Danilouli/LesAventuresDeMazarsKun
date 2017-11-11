@@ -100,7 +100,7 @@ window.addEventListener("load", function() {
 
 	function goMiddle(){
 		document.querySelector("world").style["display"] = "";
-		document.getElementById("begin").style["display"] = "none";
+		document.querySelector("firstScreen").style["display"] = "none";
 		middle = true;
 		begin = false;
 	}

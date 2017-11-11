@@ -1,6 +1,7 @@
 :root {
 	--vraiMarron : #6B3A04;
 	--orange : #FF4D00;
+	--nuitInvader : #4D338F;
 }
 
 * {
@@ -32,6 +33,57 @@ enter {
     from {top: 0px;}
     to {top: 6px;}
 }
+
+firstScreen {
+	background-color: var(--nuitInvader);
+	background-image: url("cadre.png");
+	background-size: cover;
+	background-position: 50% 50%;
+	position: absolute;
+	top: 0;
+	z-index: 1000;
+	height: 100vh;
+	width: 100vw;
+}
+
+#begin {
+	position: absolute;
+	top: 15vh;
+	left: 40vw;
+	animation-name: float2; 
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes float2 {
+    from {top: 15vh;}
+    to {top: 16vh;}
+}
+
+#title {
+	position: absolute;
+	color: var(--orange);
+	font-size: 50px;
+	font-family: Arial;
+	text-align: center;
+	width: 100vw;
+	top: 50vh;
+	text-shadow: 0 0 7px white;
+}
+
+#copyright {
+	position: absolute;
+	color: white;
+	font-size: 10px;
+	font-family: Helvetica;
+	text-align: right;
+	width: 70vw;
+	left: 15vw;
+	bottom: 20vh;
+	text-align: right;
+}
+
 
 .message {
 	position: absolute;
